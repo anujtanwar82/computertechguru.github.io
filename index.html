@@ -26,6 +26,24 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .amc-pricing-table th, .amc-pricing-table td {
+            padding: 0.5rem 0.2rem; /* Reduced horizontal padding */
+            font-size: 0.8rem; /* Further reduced font size */
+            vertical-align: middle;
+            word-break: break-word; /* Allow words to break to prevent overflow */
+        }
+        .amc-pricing-table thead th {
+            font-size: 0.85rem;
+        }
+        .popular-plan {
+            background-color: #fff3cd;
+            border: 2px solid #ffc107;
+        }
+        .popular-plan th, .popular-plan td {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
@@ -486,11 +504,11 @@
     <!-- Testimonial Start -->
     <div class="container-fluid">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <div class="col-md-7 py-5 pr-md-5">
-                    <h6 class="text-primary font-weight-normal text-uppercase mb-3 pt-5">Testimonial</h6>
+                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Testimonial</h6>
                     <h1 class="mb-4 section-title">What Our Clients Say</h1>
-                    <div class="owl-carousel testimonial-carousel position-relative pb-5 mb-md-5">
+                    <div class="owl-carousel testimonial-carousel-2 position-relative">
                         <div class="d-flex flex-column">
                             <div class="d-flex align-items-center mb-3">
                                 <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
@@ -512,11 +530,13 @@
                             <p class="m-0">We are very happy with the services provided by Computer Tech Guru. Their team is knowledgeable and always available to help us on time. Most problems are fixed quickly over a phone call, and their service is very reliable with almost no downtime. We've been working with them for over 6 years and truly value their continued support. We look forward to continuing this great relationship in the future as well.</p>
                         </div>
                     </div>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="btn btn-outline-primary mr-2" id="testimonial-prev"><i class="fa fa-chevron-left"></i></a>
+                        <a href="#" class="btn btn-outline-primary" id="testimonial-next"><i class="fa fa-chevron-right"></i></a>
+                    </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="d-flex flex-column align-items-center justify-content-center h-100 overflow-hidden">
-                        <img class="img-fluid" src="img/testimonial.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
-                    </div>
+                    <img class="img-fluid" src="img/testimonial.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -524,71 +544,108 @@
     <!-- Testimonial End -->
 
 
-    <!-- Blog Start -->
+    <!-- Pricing Plans Start -->
     <div class="container-fluid bg-light pt-5">
         <div class="container py-5">
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-md-8 col text-center mb-4">
-                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">Our Blog</h6>
-                    <h1 class="mb-4">Read The Latest News & Articles From Our Blog</h1>
+                <div class="col-lg-8 col-md-10 col text-center mb-4">
+                    <h6 class="text-primary font-weight-normal text-uppercase mb-3">IT AMC Services</h6>
+                    <h1 class="mb-4">IT AMC Pricing Plan Comparison Table</h1>
                 </div>
             </div>
-            <div class="row pb-3">
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 mb-2">
-                        <img class="card-img-top" src="img/blog-1.jpg" alt="">
-                        <div class="card-body bg-white p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <a class="btn btn-primary" href=""><i class="fa fa-link"></i></a>
-                                <h5 class="m-0 ml-3 text-truncate">Diam amet eos at no eos</h5>
-                            </div>
-                            <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 mb-2">
-                        <img class="card-img-top" src="img/blog-2.jpg" alt="">
-                        <div class="card-body bg-white p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <a class="btn btn-primary" href=""><i class="fa fa-link"></i></a>
-                                <h5 class="m-0 ml-3 text-truncate">Diam amet eos at no eos</h5>
-                            </div>
-                            <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card border-0 mb-2">
-                        <img class="card-img-top" src="img/blog-3.jpg" alt="">
-                        <div class="card-body bg-white p-4">
-                            <div class="d-flex align-items-center mb-3">
-                                <a class="btn btn-primary" href=""><i class="fa fa-link"></i></a>
-                                <h5 class="m-0 ml-3 text-truncate">Diam amet eos at no eos</h5>
-                            </div>
-                            <p>Diam amet eos at no eos sit, amet rebum ipsum clita stet, diam sea est diam eos, sit vero stet justo</p>
-                            <div class="d-flex">
-                                <small class="mr-3"><i class="fa fa-user text-primary"></i> Admin</small>
-                                <small class="mr-3"><i class="fa fa-folder text-primary"></i> Web Design</small>
-                                <small class="mr-3"><i class="fa fa-comments text-primary"></i> 15</small>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="table table-bordered text-center amc-pricing-table">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="align-middle" style="background-color: #343a40 !important; color: #ffc107 !important;">Plan</th>
+                                <th>Price (AED / Monthly)</th>
+                                <th>Support Hours</th>
+                                <th>Response Time</th>
+                                <th>Onsite Visits</th>
+                                <th>Remote Support</th>
+                                <th>Network Monitoring</th>
+                                <th>Backup Services</th>
+                                <th>Cybersecurity</th>
+                                <th>IT Consultation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Starter Plan -->
+                            <tr>
+                                <th class="bg-secondary text-white align-middle">Starter Plan</th>
+                                <td class="font-weight-bold">950</td>
+                                <td>9 AM – 5 PM (Mon – Fri)</td>
+                                <td>SLA 4 hours</td>
+                                <td>1 visit per month</td>
+                                <td>Unlimited (Support Hours)</td>
+                                <td class="text-muted">Not Included</td>
+                                <td class="text-muted">Not Included</td>
+                                <td class="text-muted">Not Included</td>
+                                <td>Included</td>
+                            </tr>
+                            <!-- Basic Plan -->
+                            <tr>
+                                <th class="bg-secondary text-white align-middle">Basic Plan</th>
+                                <td class="font-weight-bold">1,499</td>
+                                <td>9 AM – 5 PM (Mon – Fri)</td>
+                                <td>SLA 2 to 4 hours</td>
+                                <td>1 to 2 visits per month</td>
+                                <td>Unlimited (Support Hours)</td>
+                                <td>Basic Monitoring</td>
+                                <td>Basic Data Backup</td>
+                                <td>Basic Firewall & Antivirus</td>
+                                <td>Included</td>
+                            </tr>
+                            <!-- Standard Plan -->
+                            <tr class="popular-plan">
+                                <th class="bg-secondary text-white align-middle">
+                                    Standard Plan
+                                    <span class="badge badge-warning ml-2">POPULAR</span>
+                                </th>
+                                <td class="font-weight-bold">2,750</td>
+                                <td>9 AM – 6 PM (Mon – Sat)</td>
+                                <td>SLA 2 hours</td>
+                                <td>1 to 3 visits per month</td>
+                                <td>Unlimited (Support Hours)</td>
+                                <td>Standard Monitoring</td>
+                                <td>Enhanced Backup & Recovery</td>
+                                <td>Advanced Security Measures</td>
+                                <td>Included</td>
+                            </tr>
+                            <!-- Premium Plan -->
+                            <tr>
+                                <th class="bg-secondary text-white align-middle">Premium Plan</th>
+                                <td class="font-weight-bold">4,449</td>
+                                <td>24/7 Support</td>
+                                <td>Immediate Response</td>
+                                <td>1 to 4 visits per month</td>
+                                <td>24/7 Unlimited Support</td>
+                                <td>Advanced Monitoring</td>
+                                <td>Comprehensive Backup & Disaster Recovery</td>
+                                <td>Proactive Threat Monitoring</td>
+                                <td>On-Demand Consultations</td>
+                            </tr>
+                            <!-- Enterprise Plan -->
+                            <tr>
+                                <th class="bg-secondary text-white align-middle">Enterprise Plan</th>
+                                <td class="font-weight-bold">6,499</td>
+                                <td>24/7 Dedicated Support</td>
+                                <td>Immediate Priority Response</td>
+                                <td>Unlimited visits</td>
+                                <td>24/7 Unlimited Support</td>
+                                <td>Advanced Monitoring</td>
+                                <td>Full Data Recovery & Backup Solutions</td>
+                                <td>Enterprise-Grade Security & Cyber Audits</td>
+                                <td>On-Demand Consultations</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Blog End -->
+    <!-- Pricing Plans End -->
 
 
     <!-- Footer Start -->

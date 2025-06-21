@@ -106,16 +106,30 @@
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
-        items: 1,
+        smartSpeed: 1500,
+        dots: true,
+        loop: true,
+        items: 1
+    });
+
+    // Custom navigation for the second testimonial carousel
+    var testimonialCarousel2 = $(".testimonial-carousel-2").owlCarousel({
+        autoplay: true,
+        smartSpeed: 1500,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
-            '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-            '<i class="fa fa-angle-right" aria-hidden="true"></i>'
-        ]
+        items: 1
     });
-    
+
+    $('#testimonial-next').click(function(e) {
+        e.preventDefault();
+        testimonialCarousel2.trigger('next.owl.carousel');
+    });
+
+    $('#testimonial-prev').click(function(e) {
+        e.preventDefault();
+        testimonialCarousel2.trigger('prev.owl.carousel');
+    });
+
 })(jQuery);
 
