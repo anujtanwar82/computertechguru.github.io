@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --blue: #007bff;
+  --blue: #0052cc;
   --indigo: #6610f2;
   --purple: #6f42c1;
   --pink: #e83e8c;
@@ -19,14 +19,14 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #DFB163;
-  --secondary: #252531;
+  --primary: #0052cc;
+  --secondary: #1f2937;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
-  --light: #F3F6FF;
-  --dark: #181818;
+  --light: #f9fafb;
+  --dark: #0f172a;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -9669,4 +9669,372 @@ h6 {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+/* Custom IT Brand Styles */
+:root {
+  --brand-1: #0052cc;
+  --brand-2: #0d6efd;
+  --brand-3: #6cb7ff;
+  --brand-muted: #eaf3ff;
+  --text-dark: #121c32;
+}
+
+body {
+  color: #3d4b72;
+  background: #f5f8ff;
+}
+
+.navbar {
+  background: linear-gradient(90deg, rgba(0,82,204,.95) 0%, rgba(13,110,253,.95) 100%) !important;
+}
+.navbar .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #ffdf6f !important;
+}
+
+#it-services {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(8, 48, 105, 0.08);
+}
+
+#it-services .section-title {
+  color: #0d3a8a;
+}
+
+#it-services .btn-primary {
+  background: #0052cc;
+  border-color: #0052cc;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#it-services .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 82, 204, 0.32);
+}
+
+#it-services .bg-light {
+  background: #f5f8ff !important;
+}
+
+#it-services .h5,
+#it-services h5 {
+  color: #032b62;
+  font-weight: 700;
+}
+
+#it-services .p-4 {
+  border-radius: 12px;
+  border: 1px solid rgba(50, 95, 188, 0.13);
+}
+
+.team-carousel .team:hover .team-social {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-social {
+  transition: all .3s ease;
+  opacity: 0;
+  transform: translateY(12px);
+}
+
+.footer .text-white a {
+  color: #e7ebff;
+}
+
+.footer .text-white a:hover {
+  color: #ffffff;
+}
+
+.back-to-top {
+  background: #0052cc;
+  border: 2px solid #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem;
+  }
+  .container-fluid.py-5 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+/* Modern IT Services Theme - itssin.com style */
+body {
+  background: #f9fafb;
+  color: #374151;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Navbar elevation */
+.navbar {
+  background: linear-gradient(135deg, #0052cc 0%, #0d47a1 100%);
+  box-shadow: 0 2px 8px rgba(0,82,204,0.15);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.navbar .nav-link {
+  color: rgba(255,255,255,0.9) !important;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff !important;
+}
+
+/* Service cards grid */
+.service-card {
+  background: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,82,204,0.15);
+}
+
+.service-card .icon {
+  font-size: 3rem;
+  color: #0052cc;
+  margin-bottom: 1rem;
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card h5 {
+  color: #1f2937;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+}
+
+.service-card p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Button styles */
+.btn-primary {
+  background: #0052cc;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  padding: 0.625rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0041a3;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0,82,204,0.3);
+}
+
+/* Section styling */
+.section-title {
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.section-subtitle {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Trust badges */
+.trust-badges {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+.trust-badges img {
+  height: 50px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.trust-badges img:hover {
+  opacity: 1;
+}
+
+/* Testimonial cards */
+.testimonial-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  border-left: 4px solid #0052cc;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.testimonial-card .stars {
+  color: #fbbf24;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card p {
+  color: #6b7280;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card .author {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.testimonial-card .role {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* Feature list */
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  padding: 0.75rem 0;
+  color: #374151;
+  display: flex;
+  align-items: center;
+}
+
+.feature-list li:before {
+  content: "✓";
+  display: inline-block;
+  color: #0052cc;
+  font-weight: bold;
+  margin-right: 0.75rem;
+  font-size: 1.2rem;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #0052cc 0%, #0d47a1 100%);
+  color: #fff;
+  padding: 4rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+  background: #1f2937;
+  color: #d1d5db;
+}
+
+.footer h5 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.footer a {
+  color: #d1d5db;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0052cc;
+  text-decoration: none;
+}
+
+/* Newsletter */
+.newsletter-section {
+  background: linear-gradient(135deg, #0052cc 0%, #0d47a1 100%);
+  color: #fff;
+  padding: 3rem 0;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.newsletter-section p {
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 2rem;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+  
+  .trust-badges {
+    gap: 1.5rem;
+  }
+  
+  .newsletter-form {
+    flex-direction: column;
+  }
 }
