@@ -1,2 +1,0 @@
-# ctg-website
-website

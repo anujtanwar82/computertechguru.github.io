@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Managed IT Support &amp; AMC — ComputerTechGuru</title>
+<meta name="description" content="Helpdesk, on-site engineers and an annual maintenance contract that keeps day-to-day IT actually running. ComputerTechGuru, Delhi NCR.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Schibsted+Grotesk:wght@500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root{
+  --paper:#F1F3F7; --card:#FFFFFF; --tint:#E7EBF3;
+  --ink:#0F141B; --ink-2:#3E4A5B; --ink-3:#6B7A8D;
+  --rule:#D5DCE8; --rule-2:#E4E9F1;
+  --blue:#1B44E5; --blue-2:#1536B8; --blue-wash:rgba(27,68,229,.06);
+  --maxw:1220px;
+  --fd:'Schibsted Grotesk','Helvetica Neue',Arial,sans-serif;
+  --fb:'Source Serif 4',Georgia,'Times New Roman',serif;
+  --fm:'DM Mono','SFMono-Regular',Consolas,monospace;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{overflow-x:clip; scroll-behavior:smooth}
+body{margin:0; color:var(--ink); background-color:var(--paper);
+  font-family:var(--fb); font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3,h4{font-family:var(--fd); margin:0; letter-spacing:-.022em; line-height:1.12; text-wrap:balance}
+.wrap{width:100%; max-width:var(--maxw); margin-inline:auto; padding-inline:26px}
+.mono{font-family:var(--fm); font-size:11.5px; letter-spacing:.1em; text-transform:uppercase}
+:where(a,button,summary):focus-visible{outline:2px solid var(--blue); outline-offset:3px; border-radius:2px}
+
+/* topbar + header */
+.topbar{background:#0A0F16; color:#DCE3EE}
+.topbar .wrap{display:flex; flex-wrap:wrap; gap:6px 26px; align-items:center; padding-block:8px}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:#fff}
+.topbar .push{margin-left:auto}
+.topbar .on{color:#7FE3B8}
+.hdr{position:sticky; top:0; z-index:60; background:rgba(241,243,247,.92); backdrop-filter:blur(10px); border-bottom:1px solid var(--rule)}
+.hdr .wrap{display:flex; align-items:center; gap:30px; padding-block:14px; position:relative}
+.logo{display:flex; align-items:center; gap:10px; text-decoration:none; flex-shrink:0}
+.logo .sq{width:30px; height:30px; background:var(--blue); color:#fff; display:grid; place-items:center; font-family:var(--fm); font-size:11px}
+.logo b{font-family:var(--fd); font-size:17px; font-weight:700; letter-spacing:-.02em}
+.hnav{display:flex; align-items:center; gap:24px; margin-left:auto}
+.hnav a{font-family:var(--fd); font-size:14.5px; color:var(--ink-2); text-decoration:none}
+.hnav a:hover,.hnav a[aria-current]{color:var(--blue)}
+.bt{display:inline-flex; align-items:center; justify-content:center; gap:8px; font-family:var(--fd); font-size:14.5px; font-weight:600;
+  padding:11px 20px; text-decoration:none; border:1px solid var(--ink); background:var(--ink); color:#fff; cursor:pointer;
+  transition:background .15s ease,color .15s ease,border-color .15s ease}
+.bt:hover{background:var(--blue); border-color:var(--blue)}
+.bt.alt{background:transparent; color:var(--ink); border-color:var(--rule)}
+.bt.alt:hover{background:transparent; color:var(--blue); border-color:var(--blue)}
+.bt.blue{background:var(--blue); border-color:var(--blue)}
+.bt.blue:hover{background:var(--blue-2); border-color:var(--blue-2)}
+.bt.wide{width:100%}
+.bt.big{padding:14px 26px; font-size:15.5px}
+.bt.ghostw{background:transparent; border-color:rgba(255,255,255,.45); color:#fff}
+.bt.ghostw:hover{background:#fff; color:var(--ink); border-color:#fff}
+.burger{display:none; margin-left:auto; background:none; border:1px solid var(--rule); padding:8px 12px; cursor:pointer; font-family:var(--fm); font-size:11px; letter-spacing:.1em}
+
+/* hero band */
+.band{position:relative; overflow:hidden; background:linear-gradient(105deg,#0A1330 0%,#12246E 46%,#1B44E5 100%); color:#fff}
+.band::after{content:""; position:absolute; inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+  background-size:34px 34px; pointer-events:none}
+.band .wrap{position:relative; z-index:1; padding-block:56px 62px}
+.crumb{font-family:var(--fm); font-size:11.5px; letter-spacing:.08em; color:#A9BCF5; margin-bottom:20px}
+.crumb a{text-decoration:none}
+.crumb a:hover{color:#fff}
+.crumb span{opacity:.55; padding-inline:7px}
+.band h1{font-size:clamp(32px,5vw,54px); font-weight:800; max-width:17ch}
+.band .sub{margin-top:18px; font-size:19px; color:#D3DEFB; max-width:58ch}
+.bandmeta{display:flex; flex-wrap:wrap; gap:10px 28px; margin-top:28px; padding-top:22px; border-top:1px solid rgba(255,255,255,.16);
+  font-family:var(--fm); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:#A9BCF5}
+.bandmeta b{color:#fff; font-weight:500}
+
+/* body layout */
+.main{padding-block:64px 8px}
+.cols{display:grid; grid-template-columns:minmax(0,1fr) 344px; gap:60px; align-items:start}
+.article h2{font-size:clamp(23px,2.7vw,30px); font-weight:700; margin-bottom:14px}
+.article h2:not(:first-child){margin-top:46px}
+.article p{color:var(--ink-2); max-width:64ch}
+.checks{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); margin-top:6px}
+.checks div{background:var(--card); padding:15px 17px; display:flex; gap:11px; font-size:15.5px; align-items:flex-start; line-height:1.5}
+.checks svg{width:15px; height:15px; stroke:var(--blue); fill:none; stroke-width:2.2; stroke-linecap:round; stroke-linejoin:round; flex-shrink:0; margin-top:4px}
+.faq{border-top:1px solid var(--rule); margin-top:10px}
+.faq details{border-bottom:1px solid var(--rule-2)}
+.faq summary{cursor:pointer; list-style:none; padding:16px 0; font-family:var(--fd); font-weight:600; font-size:16.5px; display:flex; gap:14px; align-items:flex-start}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:"+"; font-family:var(--fm); color:var(--blue); font-size:15px; line-height:1.3}
+.faq details[open] summary::before{content:"–"}
+.faq p{padding:0 0 18px 28px; font-size:16px; color:var(--ink-2)}
+
+/* sidebar */
+.side{position:sticky; top:92px; display:flex; flex-direction:column; gap:14px}
+.panel{background:var(--card); border:1px solid var(--rule)}
+.panel .ph{padding:15px 20px; border-bottom:1px solid var(--rule-2); color:var(--ink-3)}
+.panel .pb{padding:20px}
+.price{font-family:var(--fd); font-size:30px; font-weight:800; letter-spacing:-.03em; font-variant-numeric:tabular-nums; line-height:1.1}
+.price.small{font-size:21px}
+.price i{display:block; font-style:normal; font-family:var(--fm); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:400; margin-top:7px}
+.tiers{display:flex; flex-wrap:wrap; gap:6px; margin-top:16px}
+.tier{font-family:var(--fm); font-size:10.5px; letter-spacing:.06em; padding:5px 9px; border:1px solid var(--rule); color:var(--ink-3); background:var(--paper)}
+.tier.on{border-color:var(--blue); color:var(--blue); background:var(--blue-wash)}
+.pnote{font-size:13.5px; color:var(--ink-3); margin-top:16px; line-height:1.55}
+.panel .pb .bt{margin-top:18px}
+.side p.ask{font-size:15.5px; color:var(--ink-2)}
+.sidecall{display:block; margin-top:14px; font-family:var(--fd); font-weight:600; font-size:16px; text-decoration:none}
+.sidecall:hover{color:var(--blue)}
+.side small{display:block; margin-top:6px; font-family:var(--fm); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3)}
+
+/* related */
+.rel{padding-block:56px 64px}
+.rel .rh{color:var(--ink-3); padding-bottom:14px; border-bottom:1px solid var(--rule); margin-bottom:18px}
+.relg{display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:12px}
+.relc{background:var(--card); border:1px solid var(--rule); padding:18px 16px; text-decoration:none; display:flex; flex-direction:column; gap:8px; transition:border-color .15s ease, transform .15s ease}
+.relc:hover{border-color:var(--blue); transform:translateY(-2px)}
+.relc b{font-family:var(--fd); font-size:15.5px; font-weight:700}
+.relc span{font-family:var(--fm); font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--blue)}
+
+/* cta band */
+.cta{position:relative; overflow:hidden; background:linear-gradient(105deg,#0A1330 0%,#12246E 46%,#1B44E5 100%); color:#fff}
+.cta::after{content:""; position:absolute; inset:0;
+  background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);
+  background-size:34px 34px; pointer-events:none}
+.cta .wrap{position:relative; z-index:1; padding-block:56px; display:grid; grid-template-columns:minmax(0,1fr) auto; gap:34px; align-items:center}
+.cta h2{font-size:clamp(24px,3.4vw,36px); font-weight:800}
+.cta p{margin-top:12px; color:#D3DEFB; max-width:56ch}
+.ctab{display:flex; flex-wrap:wrap; gap:12px}
+
+/* footer */
+.ft{background:#0A0F16; color:#C3CEDD}
+.ftg{display:grid; grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr)); gap:38px; padding-block:50px}
+.ftg p{font-size:15px; color:#8A99AD; max-width:36ch; margin-top:13px}
+.ftg h4{font-family:var(--fm); font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:#7B8AA0; font-weight:400; margin-bottom:14px}
+.ftg .lnk{display:block; font-family:var(--fd); font-size:14.5px; color:#C3CEDD; text-decoration:none; padding:5px 0}
+.ftg .lnk:hover{color:#fff}
+.ft .logo b{color:#fff}
+.ftbar{border-top:1px solid #1B2431; padding-block:18px; display:flex; flex-wrap:wrap; gap:8px 20px; color:#6F7E92}
+.ftbar .push{margin-left:auto}
+
+@media (max-width:1040px){
+  .cols{grid-template-columns:1fr; gap:44px}
+  .side{position:static}
+  .relg{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:820px){
+  .checks{grid-template-columns:1fr}
+  .cta .wrap{grid-template-columns:1fr; gap:26px}
+  .ftg{grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px}
+  .relg{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:700px){
+  .hnav{display:none}
+  .hnav.open{display:flex; flex-direction:column; align-items:stretch; gap:0; position:absolute; top:100%; left:0; right:0;
+    background:var(--paper); border-bottom:1px solid var(--rule); padding:6px 26px 16px}
+  .hnav.open a{padding:12px 0; border-bottom:1px solid var(--rule-2)}
+  .hnav.open .bt{margin-top:12px; border-bottom:1px solid var(--ink)}
+  .burger{display:block}
+  .band .wrap{padding-block:40px 46px}
+  .main{padding-block:46px 0}
+  .relg{grid-template-columns:1fr}
+  .topbar .push{margin-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition-duration:.001ms !important; scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap mono">
+  <span>D-122, Dwarka Sector-3, New Delhi 110059</span>
+  <a href="mailto:info@computertechguru.com">info@computertechguru.com</a>
+  <span class="push on">● NOC monitoring 24/7</span>
+  <a href="tel:+918826179837">+91 88261 79837</a>
+</div></div>
+<header class="hdr"><div class="wrap">
+  <a class="logo" href="../index.html"><span class="sq">CTG</span><b>ComputerTechGuru</b></a>
+  <button class="burger" id="burger" aria-expanded="false" aria-controls="hnav">MENU</button>
+  <nav class="hnav" id="hnav">
+    <a href="./it-support.html" aria-current="page">IT Support &amp; AMC</a>
+    <a href="./cybersecurity.html">Cybersecurity</a>
+    <a href="./cloud-migration.html">Cloud &amp; Migration</a>
+    <a href="./backup-recovery.html">Backup &amp; Recovery</a>
+    <a class="bt" href="#engage">Free IT audit</a>
+  </nav>
+</div></header>
+<section class="band">
+  <div class="wrap">
+    <div class="crumb"><a href="../index.html">Home</a><span>/</span><a href="./it-support.html">Services</a><span>/</span>IT Support &amp; AMC</div>
+    <h1>Managed IT Support &amp; AMC</h1>
+    <p class="sub">Helpdesk, on-site engineers and an annual maintenance contract that keeps day-to-day IT actually running.</p>
+    <div class="bandmeta">
+      <span><b>Delhi NCR</b> onsite coverage</span>
+      <span><b>2 hr</b> standard SLA</span>
+      <span><b>24/7</b> monitoring</span>
+      <span>Since <b>2017</b></span>
+    </div>
+  </div>
+</section>
+
+<div class="main"><div class="wrap"><div class="cols">
+  <article class="article">
+    <h2>Overview</h2>
+    <p>An annual maintenance contract gives you a real IT department on call — remote helpdesk, scheduled on-site visits, and a response clock that starts the moment you raise a ticket. Instead of calling a different freelancer every time something breaks, you get one accountable team that already knows your setup, your licences and your history.</p>
+
+    <h2>What is covered</h2>
+    <div class="checks">
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Remote helpdesk by phone, email and chat</span></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Scheduled on-site visits across Delhi NCR</span></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Desktop, laptop and peripheral troubleshooting</span></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Server, network and endpoint monitoring</span></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Priority SLA on business-critical issues</span></div>
+      <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Asset register and licence tracking</span></div>
+    </div>
+
+    <h2>Our approach</h2>
+    <p>Every AMC starts with a full IT asset audit, so we know exactly what we are supporting from day one. Response-time SLAs are set by issue severity, not by whoever shouts loudest. Recurring faults get root-caused and closed out rather than patched again next month — you will see the repeat-ticket count fall in your monthly report.</p>
+
+    <h2>Who this is for</h2>
+    <p>Businesses with no in-house IT staff, or a one-person IT team that needs cover for overflow, holidays and after-hours incidents.</p>
+
+    <h2>What you get</h2>
+    <p>A signed AMC with defined response times, a named engineer, a monthly report showing measured uptime against SLA, and one number to call instead of a rotating cast of contractors.</p>
+
+    <h2>Common questions</h2>
+    <div class="faq">
+      <details><summary>What counts as a critical issue?</summary><p>Anything that stops the business trading — server down, internet down, email down, or a security incident. Those jump the queue regardless of who raised them.</p></details>
+      <details><summary>Is there a minimum contract length?</summary><p>AMCs run annually, billed monthly. You can move up a tier at any point without signing a new contract.</p></details>
+      <details><summary>Do you support our existing vendors?</summary><p>Yes. We hold the relationship with your ISP, hardware supplier and software vendors so you are not the one chasing them.</p></details>
+    </div>
+  </article>
+  <aside class="side">
+  <div class="panel">
+    <div class="ph mono">Included in your AMC</div>
+    <div class="pb">
+      <div class="price">₹21,999<i>per month · from</i></div>
+      <div class="tiers"><span class="tier on">Starter</span><span class="tier on">Basic</span><span class="tier on">Standard</span><span class="tier on">Premium</span><span class="tier on">Enterprise</span></div>
+      <p class="pnote">All five AMC tiers include this service. Prices exclude GST.</p>
+      <a class="bt blue wide" href="#engage">Request a quote</a>
+    </div>
+  </div>
+  <div class="panel">
+    <div class="ph mono">Talk to an engineer</div>
+    <div class="pb">
+      <p class="ask">Tell us about your setup and we will recommend the right scope for Managed IT Support &amp; AMC — usually a ten minute call.</p>
+      <a class="sidecall" href="tel:+918826179837">+91 88261 79837</a>
+      <small>Helpdesk 9 AM – 6 PM · NOC 24/7</small>
+      <a class="bt alt wide" href="mailto:info@computertechguru.com">Email the team</a>
+    </div>
+  </div>
+</aside>
+</div></div></div>
+
+<section class="rel"><div class="wrap">
+  <div class="rh mono">Related services</div>
+  <div class="relg">
+    <a class="relc" href="./cybersecurity.html"><span>→</span><b>Cybersecurity</b></a>
+    <a class="relc" href="./cloud-migration.html"><span>→</span><b>Cloud &amp; Migration</b></a>
+    <a class="relc" href="./backup-recovery.html"><span>→</span><b>Backup &amp; Recovery</b></a>
+    <a class="relc" href="./network-design.html"><span>→</span><b>Network Design</b></a>
+    <a class="relc" href="./hardware-licensing.html"><span>→</span><b>Hardware &amp; Licensing</b></a>
+  </div>
+</div></section>
+
+<section class="cta" id="engage"><div class="wrap">
+  <div>
+    <h2>Ready to get started with Managed IT Support &amp; AMC?</h2>
+    <p>Book a free IT audit. We walk your site, inventory what you are running, and send a scoped quote — the written report is yours to keep either way.</p>
+  </div>
+  <div class="ctab">
+    <a class="bt blue big" href="tel:+918826179837">Call +91 88261 79837</a>
+    <a class="bt ghostw big" href="mailto:info@computertechguru.com">Email us</a>
+  </div>
+</div></section>
+<footer class="ft"><div class="wrap">
+  <div class="ftg">
+    <div>
+      <a class="logo" href="../index.html" style="display:flex"><span class="sq">CTG</span><b>ComputerTechGuru</b></a>
+      <p>Managed IT, cloud and cybersecurity services for small and mid-sized businesses across Delhi NCR. Operating since 2017.</p>
+    </div>
+    <div><h4>Services</h4><a class="lnk" href="./it-support.html">IT Support &amp; AMC</a><a class="lnk" href="./cybersecurity.html">Cybersecurity</a><a class="lnk" href="./cloud-migration.html">Cloud &amp; Migration</a></div>
+    <div><h4>More services</h4><a class="lnk" href="./backup-recovery.html">Backup &amp; Recovery</a><a class="lnk" href="./network-design.html">Network Design</a><a class="lnk" href="./hardware-licensing.html">Hardware &amp; Licensing</a></div>
+    <div><h4>Contact</h4>
+      <a class="lnk" href="tel:+918826179837">+91 88261 79837</a>
+      <a class="lnk" href="mailto:info@computertechguru.com">info@computertechguru.com</a>
+      <a class="lnk" href="#engage">Request a quote</a>
+    </div>
+  </div>
+  <div class="ftbar mono">
+    <span>© 2026 ComputerTechGuru. All rights reserved.</span>
+    <span class="push">D-122, Dwarka Sector-3, New Delhi 110059</span>
+  </div>
+</div></footer>
+<script>
+(function(){
+  var b=document.getElementById('burger'), n=document.getElementById('hnav');
+  if(b&&n){
+    b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.textContent=o?'CLOSE':'MENU';});
+    n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.textContent='MENU';b.setAttribute('aria-expanded','false');}});
+  }
+})();
+</script>
+</body>
+</html>
